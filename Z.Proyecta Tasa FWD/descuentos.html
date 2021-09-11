@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Tasa Futura</title>
+</head>
+
+<body>
+
+    <h1>Esta es una calculadora de TASA futura</h1>
+
+
+    <form>
+        <label for="dateInicial">Fecha Inicial</label>
+        <input type="date" id="dateInicial" />
+        <label for="dateFinal">Fecha Final</label>
+        <input type="date" id="dateFinal" />
+        <label for="diasDados">Días</label>
+        <input type="number" id="diasDados" />
+        <label for="rateSpot">Tasa Spot</label>
+        <input type="number" id="rateSpot" />
+        <label for="devaluation">Devaluación</label>
+        <input type="number" id="devaluation" />
+
+        <button type="button" onclick="OnClicKCalculationRateStrike()">Resultado</button>
+
+    </form>
+    <p id="ResultPrice"></p>
+</body>
+<script src="descuentos.js"></script>
+
+</html>
