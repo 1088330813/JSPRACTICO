@@ -1,0 +1,45 @@
+ html {
+     font-size: 62.5%;
+ }
+ 
+ body {
+     padding: 0;
+     margin: 0;
+     font-size: 2rem;
+     font-family: sans-serif;
+ }
+ /* a {
+     text-decoration: none;
+     cursor: pointer;
+ } */
+ 
+ header {
+     width: 100%;
+     height: 6rem;
+ }
+ 
+ h1 {
+     text-align: center;
+     margin: 5rem;
+ }
+ 
+ body form article {
+     margin: 0.5rem 1rem;
+     padding: 1rem 1rem;
+ }
+ 
+ body section {
+     display: flex;
+     justify-content: flex-end;
+     justify-content: center;
+ }
+ 
+ .articleDay {
+     text-align: center;
+     background-color: rgb(236, 174, 174);
+     border: rgb(247, 246, 244) solid;
+ }
+ /* header nav .nav-right-section a {
+     margin-right: 1rem;
+     color: black;
+ } */
