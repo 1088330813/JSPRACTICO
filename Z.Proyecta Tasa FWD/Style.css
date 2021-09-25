@@ -1,45 +1,108 @@
- html {
-     font-size: 62.5%;
- }
- 
- body {
+ * {
      padding: 0;
      margin: 0;
-     font-size: 2rem;
-     font-family: sans-serif;
+     box-sizing: border-box;
  }
- /* a {
-     text-decoration: none;
-     cursor: pointer;
- } */
+ 
+ html {
+     font-size: 100%;
+ }
  
  header {
      width: 100%;
-     height: 6rem;
+     height: 13rem;
  }
  
- h1 {
-     text-align: center;
-     margin: 5rem;
- }
- 
- body form article {
-     margin: 0.5rem 1rem;
-     padding: 1rem 1rem;
- }
- 
- body section {
+ header nav {
      display: flex;
-     justify-content: flex-end;
      justify-content: center;
  }
  
- .articleDay {
-     text-align: center;
-     background-color: rgb(236, 174, 174);
-     border: rgb(247, 246, 244) solid;
+ header nav .nav-central-section {
+     width: 50%;
+     height: auto;
+     display: flex;
+     list-style-type: none;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     margin-top: 3rem;
+     background-color: rgb(165, 173, 238);
+     border-radius: 90%;
  }
- /* header nav .nav-right-section a {
-     margin-right: 1rem;
-     color: black;
- } */
+ 
+ ul li a {
+     text-decoration: none;
+     font-size: 1.5rem;
+     font-family: fantasy;
+     color: rgb(19, 18, 18);
+ }
+ 
+ nav .nav-central-section img {
+     border-radius: 20%;
+     margin-left: 2rem;
+     width: 4rem;
+     margin: 1rem;
+ }
+ 
+ .main-general {
+     align-content: center;
+     width: 100%;
+     height: auto;
+     background-color: rgb(216, 192, 216);
+     max-width: 60%;
+     margin: auto;
+     display: flex;
+ }
+ 
+ #dateFinal {
+     width: 100%;
+     display: flex;
+ }
+ 
+ #dateInicial {
+     width: 100%;
+     display: flex;
+ }
+ 
+ main .date-range {
+     text-align: center;
+     font-size: 1.5rem;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     margin-left: 0.5rem;
+     width: 30%;
+ }
+ 
+ main .date-days {
+     text-align: start;
+     font-size: 1.5rem;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     margin-left: 0.5rem;
+     width: 50%;
+ }
+ 
+ main .rate-spot {
+     text-align: center;
+     font-size: 1.5rem;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     margin-left: 0.5rem;
+ }
+ 
+ main .rate-spot {
+     text-align: center;
+     font-size: 1.5rem;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     margin-left: 0.5rem;
+ }
+ 
+ .button-calculate {
+     text-align: start;
+     margin-top: 2rem;
+ }
+ 
+ main .result {
+     text-align: start;
+     font-size: 1.5rem;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     margin-left: 0.5rem;
+ }

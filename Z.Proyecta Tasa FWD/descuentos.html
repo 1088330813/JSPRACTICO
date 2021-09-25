@@ -6,44 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Tasa Futura</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./Style.css">
+    <link rel="icon" href="./img/logodolar.png.png">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul class="nav-central-section">
+                <li>
+                    <a href="">
+                        <img src="./img/logodolar.png.png" alt="imagen de login gmail">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h1>Calculadora de TASA futura</h1>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <h1>Esta es una calculadora de TASA futura</h1>
-
-    <section>
+    </header class="header-main">
+    <main class="main-general">
         <form>
-            <article>
+            <section class="date-range">
                 <label for="dateInicial">Fecha Inicial</label>
                 <input type="date" id="dateInicial" />
                 <label for="dateFinal">Fecha Final</label>
                 <input type="date" id="dateFinal" />
-            </article>
-            <article class="articleDay">
-
+            </section>
+            <section class="date-days">
                 <label for="diasDados">Días</label>
                 <input type="number" id="diasDados" />
-
-            </article>
-            <article>
+            </section>
+            <section class="rate-spot">
                 <label for="rateSpot">Tasa Spot</label>
                 <input type="number" id="rateSpot" />
                 <label for="devaluation">Devaluación</label>
                 <input type="number" id="devaluation" />
-            </article>
-            <button type="button" onclick="OnClicKCalculationRateStrike()">Resultado</button>
-            <article>
+            </section>
+            <section class="button-calculate">
+                <button type="button" onclick="OnClicKCalculationRateStrike()" type="button" class="btn btn-primary btn-lg">Resultado</button>
+            </section>
+            <section class="result">
                 <p id="ResultPrice"></p>
-            </article>
+            </section>
         </form>
 
-    </section>
-    <article>
-        <p id="ResultPrice"></p>
-    </article>
+    </main>
 </body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 <script src="descuentos.js"></script>
 
 </html>

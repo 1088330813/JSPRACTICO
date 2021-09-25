@@ -20,7 +20,11 @@ function OnClicKCalculationRateStrike() {
     valueDevaluation = inputDevaluation.value;
 
     const OperNumDias = Math.abs(valueDateFin - valueDateIni);
-    numDias = OperNumDias / (1000 * 3600 * 24)
+
+    if (valueDateFin > valueDateIni) {
+        numDias = OperNumDias / (1000 * 3600 * 24)
+    } else { numDias = (OperNumDias * -1) / (1000 * 3600 * 24) }
+
 
 
     if ((valueDiasDados != '' && inputDateIni.value && inputDateFin.value) || (valueDiasDados != '' && inputDateIni.value) || (valueDiasDados != '' && inputDateFin.value)) {
