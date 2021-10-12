@@ -37,8 +37,10 @@ function guardarInfo() {
     const valueC = inputC.value;
 
 }
-repertorios.push({
-    nombre = valueA,
-    tonalidad = valueB,
-    tema = valueC,
-});
+
+var repertorio = new nombre(valueA, new tonalidad(valueB), new tema(valueC))
+    // repertorios.push({
+    //     nombre = valueA,
+    //     tonalidad = valueB,
+    //     tema = valueC,
+    // });
