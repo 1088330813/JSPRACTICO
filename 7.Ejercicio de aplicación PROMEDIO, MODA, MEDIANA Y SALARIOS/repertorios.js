@@ -1,32 +1,41 @@
-const nombreCanciones = repertorios.map(
-    function(canciones) {
-        return canciones.nombre;
+class repertorios {
 
-    });
-const nombreCancionesOrdenada = repertorios.sort(
-    function(a, b) {
-        if (a.nombre > b.nombre) {
-            return 1;
-        }
-        if (a.nombre < b.nombre) {
-            return -1;
-        } else { 0 };
-    });
+    constructor(nombre, tonalidad, tema) {
+        this.nombre = nombre;
+        this.tonalidad = tonalidad;
+        this.tema = tema;
+    }
 
-const nombreCancionesPorTonalidadFa = nombreCancionesOrdenada.filter(
-    function(canciones) {
-        return canciones.tonalidad == "F";
-    });
+};
 
-const nombreCancionesPorTonalidad = repertorios.filter(
-    function(canciones) {
-        return canciones.tonalidad == "F";
-    });
+// const nombreCanciones = repertorios.map(
+//     function(canciones) {
+//         return canciones.nombre;
+//     });
+// const nombreCancionesOrdenada = repertorios.sort(
+//     function(a, b) {
+//         if (a.nombre > b.nombre) {
+//             return 1;
+//         }
+//         if (a.nombre < b.nombre) {
+//             return -1;
+//         } else { 0 };
+//     });
 
-const nombreCancionesPrimeraCancion = repertorios.find(
-    function(canciones) {
-        return canciones.tonalidad == "F";
-    });
+// const nombreCancionesPorTonalidadFa = nombreCancionesOrdenada.filter(
+//     function(canciones) {
+//         return canciones.tonalidad == "F";
+//     });
+
+// const nombreCancionesPorTonalidad = repertorios.filter(
+//     function(canciones) {
+//         return canciones.tonalidad == "F";
+//     });
+
+// const nombreCancionesPrimeraCancion = repertorios.find(
+//     function(canciones) {
+//         return canciones.tonalidad == "F";
+//     });
 
 function guardarInfo() {
     const inputA = document.getElementById("NombreCancion");
@@ -35,12 +44,21 @@ function guardarInfo() {
     const valueB = inputB.value;
     const inputC = document.getElementById("Tematica");
     const valueC = inputC.value;
+    var nuevaCancion = new repertorios(valueA, valueB, valueC);
+
+    const printName = document.getElementById("PrintNombre");
+    printName.innerText = nuevaCancion.nombre;
+
+    const printTonalidad = document.getElementById("PrintTonalidad");
+    printTonalidad.innerText = nuevaCancion.tonalidad;
+
+    const printTema = document.getElementById("PrintTema");
+    printTema.innerText = nuevaCancion.tema;
+
+    console.log(
+        nuevaCancion.nombre,
+        nuevaCancion.tonalidad,
+        nuevaCancion.tema,
+    );
 
 }
-
-var repertorio = new nombre(valueA, new tonalidad(valueB), new tema(valueC))
-    // repertorios.push({
-    //     nombre = valueA,
-    //     tonalidad = valueB,
-    //     tema = valueC,
-    // });
